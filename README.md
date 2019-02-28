@@ -13,9 +13,9 @@ different services in your kubernetes.
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-* [VirtualBox](https://www.virtualbox.org/)
+* [VirtualBox 5.2](https://www.virtualbox.org/)
 
-`brew cask install virtualbox`
+Download from here: https://www.virtualbox.org/wiki/Download_Old_Builds_5_2
 
 * [Minikube](https://github.com/kubernetes/minikube)
 
@@ -43,13 +43,9 @@ $ helm init
 
 ### Ubuntu
 
-* [VirtualBox]([https://github.com/kubernetes/minikube](https://www.virtualbox.org/))
+* [VirtualBox 5.2.18 *!The version is important*](https://www.virtualbox.org/)
 
-```
-$ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-
-$ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian cosmic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-```
+Download from here: https://www.virtualbox.org/wiki/Download_Old_Builds_5_2
 
 * [Minikube](https://github.com/kubernetes/minikube)
 
