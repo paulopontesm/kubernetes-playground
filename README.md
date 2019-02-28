@@ -31,7 +31,7 @@ $ minikube start
 * [Helm]([https://github.com/kubernetes/minikube](https://helm.sh/))
 
 ```
-$ brew install helm
+$ brew install kubernetes-helm
 
 ## install helm on the kuberntes cluster
 $ helm init
