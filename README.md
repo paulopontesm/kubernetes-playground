@@ -131,3 +131,11 @@ $ kubectl --namespace default port-forward $POD_NAME 3000
 ```
 
 Open http://localhost:3000/ and login with `admin:{password}`
+
+
+## Create a deployment and a service
+
+
+Run `h314to/hellogo:latest` on kubernetes.
+
+Try to do it yourself. If you can't solutions are provided in `hello.yaml` and the `Makefile` 
