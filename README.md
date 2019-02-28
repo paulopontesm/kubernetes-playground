@@ -140,13 +140,12 @@ $ kubectl --namespace default port-forward $POD_NAME 3000
 Open http://localhost:3000/ and login with `admin:{password}`
 
 
-## Create a deployment and a service
+## Part 3 - Create a deployment and a service
 
-Run `h314to/hellogo:latest` on kubernetes.
+Run `h314to/hellogo:latest` on kubernetes by creating a [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and a [service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
 Try to do it yourself. If you can't solutions are provided in `hello.yaml` and the `Makefile` 
 
 Good starting points:
-- https://medium.com/@pablorsk/kubernetes-helm-node-hello-world-c97d20437abd
 - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 - https://kubernetes.io/docs/concepts/services-networking/service/
