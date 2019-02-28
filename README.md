@@ -133,3 +133,5 @@ $ export POD_NAME=$(kubectl get pods --namespace default -l "app=grafana,release
 
 $ kubectl --namespace default port-forward $POD_NAME 3000
 ```
+
+Open http://localhost:3000/ and login with `admin:{password}`
