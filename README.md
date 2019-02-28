@@ -142,7 +142,11 @@ Open http://localhost:3000/ and login with `admin:{password}`
 
 ## Create a deployment and a service
 
-
 Run `h314to/hellogo:latest` on kubernetes.
 
 Try to do it yourself. If you can't solutions are provided in `hello.yaml` and the `Makefile` 
+
+Good starting points:
+- https://medium.com/@pablorsk/kubernetes-helm-node-hello-world-c97d20437abd
+- https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+- https://kubernetes.io/docs/concepts/services-networking/service/
