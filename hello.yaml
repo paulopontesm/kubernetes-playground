@@ -1,0 +1,43 @@
+# deployment
+
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: hello-dep
+  name: hello-dep
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: hello
+  template:
+    metadata:
+      labels:
+        run: hello
+    spec:
+      containers:
+        - image: h314to/hellogo:latest
+          name: hello
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+
+---
+
+# service
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: hello-svc
+  name: hello-svc
+spec:
+  selector:
+    run: hello
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  type: NodePort
